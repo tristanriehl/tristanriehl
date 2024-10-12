@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* Style the navigation bar */
+.navbar {
+    height: 5ch;
+    display: flex;
+    background-color: #333;
+    overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.navbar a {
+    padding: 14px 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Style the active/current link */
+.navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.header > div {
+    background-image: url('src/Grassguitar.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-size: xx-large;
+  }
+
+.header1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutme {
+    padding: 1rem 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.aboutme > div {
+    margin: 1rem;
+}
+/*
+.logos {
+    width: 5rem;
+    height: 5rem;
+}
+*/
