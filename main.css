@@ -1116,7 +1116,7 @@ h2.animate {
   color: #e0e0e0;
   max-width: 800px;
   margin: 0 auto;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 @media (max-width: 768px) {
@@ -1290,7 +1290,6 @@ h2.animate {
   transition: all var(--transition-speed) ease;
   font-weight: 500;
   display: inline-block;
-  margin-top: 0.8rem;
 }
 
 .teaching-text a::after {
