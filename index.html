@@ -19,62 +19,72 @@
 
   <body>
     <nav class="navbar">
-        <!-- Hamburger Icon -->
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        
-        <!-- Navigation Links -->
-        <div class="nav-links">
-            <a href="#home" class="active">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
 
-    <script>function toggleMenu() {
-        const navLinks = document.querySelector('.nav-links');
-        const hamburger = document.querySelector('.hamburger');
-        
-        navLinks.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    }
-    
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        const nav = document.querySelector('.navbar');
-        const hamburger = document.querySelector('.hamburger');
-        
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        const hamburger = document.querySelector(".hamburger");
+
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      }
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (e) => {
+        const nav = document.querySelector(".navbar");
+        const hamburger = document.querySelector(".hamburger");
+
         if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
-            document.querySelector('.nav-links').classList.remove('active');
-            document.querySelector('.hamburger').classList.remove('active');
+          document.querySelector(".nav-links").classList.remove("active");
+          document.querySelector(".hamburger").classList.remove("active");
         }
-    });
-    
-    // Close menu when clicking a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.remove('active');
-            document.querySelector('.hamburger').classList.remove('active');
+      });
+
+      // Close menu when clicking a link
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.querySelector(".nav-links").classList.remove("active");
+          document.querySelector(".hamburger").classList.remove("active");
         });
-    });</script>
+      });
+    </script>
 
     <section id="home" class="header">
       <div class="header-content">
         <h1 class="animate-slide">Tristan Riehl</h1>
         <p class="follow-text">Follow me to stay updated on new posts!</p>
         <div class="social-links">
-          <a href="https://www.instagram.com/tristanriehl/" target="_blank" aria-label="Instagram">
+          <a
+            href="https://www.instagram.com/tristanriehl/"
+            target="_blank"
+            aria-label="Instagram"
+          >
             <svg class="social-icon" viewBox="0 0 24 24">
               <path
                 d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3"
               />
             </svg>
           </a>
-          <a href="https://www.youtube.com/@TristanRiehl" target="_blank" aria-label="YouTube">
+          <a
+            href="https://www.youtube.com/@TristanRiehl"
+            target="_blank"
+            aria-label="YouTube"
+          >
             <svg class="social-icon" viewBox="0 0 24 24">
               <path
                 d="m10 15 5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73"
@@ -101,14 +111,19 @@
               with 13 years of guitar experience and also play the piano.
               Furthermore, I specialize in fingerstyle and percussive guitar. In
               addition, I take classical guitar lessons from
-              <a href="https://lylesheffler.com/" target="_blank">Lyle Sheffler</a>.
+              <a href="https://lylesheffler.com/" target="_blank"
+                >Lyle Sheffler</a
+              >.
             </p>
             <p>
               My inspirations are
-              <a href="https://tommyemmanuel.com/" target="_blank" >Tommy Emmanuel</a> and
-              <a href="https://marcinofficial.com/" target="_blank" >Marcin</a>. Listening and
-              practicing their music taught me new techniques for their unique
-              styles of guitar. They also make really great music.
+              <a href="https://tommyemmanuel.com/" target="_blank"
+                >Tommy Emmanuel</a
+              >
+              and
+              <a href="https://marcinofficial.com/" target="_blank">Marcin</a>.
+              Listening and practicing their music taught me new techniques for
+              their unique styles of guitar. They also make really great music.
             </p>
             <div class="cta-button">
               <a href="#contact">Book a Session</a>
@@ -184,7 +199,6 @@
     </section>
 
     <script>
-        
       // Video Carousel Functionality
       let currentSlide = 0;
       const slides = document.querySelectorAll(".carousel-slide");
@@ -220,7 +234,6 @@
         .querySelector(".carousel-next")
         .addEventListener("click", () => showSlide(currentSlide + 1));
 
-
       // Add click handlers for embedded iframes
       document.querySelectorAll(".embedded-video").forEach((iframe) => {
         iframe.addEventListener("click", () => {
@@ -252,42 +265,66 @@
       </div>
 
       <!-- Add this inside your services section -->
-<div class="teaching-grid">
-    <!-- First Teaching Item -->
-    <div class="teaching-item">
-        <div class="teaching-image">
-            <img src="src/SchoolGuitarPoster.jpg" alt="Tristan teaching guitar">
-        </div>
-        <div class="teaching-text">
+      <div class="teaching-grid">
+        <!-- First Teaching Item -->
+        <div class="teaching-item">
+          <div class="teaching-image">
+            <img
+              src="src/SchoolGuitarPoster.jpg"
+              alt="Tristan teaching guitar"
+            />
+          </div>
+          <div class="teaching-text">
             <h3>Personalized Instruction</h3>
-            <p>I teach guitar lessons in North Beach / Telegraph Hill in San Francisco. Contact me if you would like to learn more.
+            <p>
+              I teach guitar lessons in North Beach / Telegraph Hill in San
+              Francisco. Contact me if you would like to learn more.
             </p>
+          </div>
         </div>
-    </div>
 
-    <!-- Second Teaching Item -->
-    <div class="teaching-item">
-        <div class="teaching-image">
-            <img src="src/TeachingGuitar.jpg" alt="Student performance">
-        </div>
-        <div class="teaching-text">
+        <!-- Second Teaching Item -->
+        <div class="teaching-item">
+          <div class="teaching-image">
+            <img src="src/TeachingGuitar.jpg" alt="Student performance" />
+          </div>
+          <div class="teaching-text">
             <h3>Student Success</h3>
-            <p>My students learn proper technique and musical expression, developing skills for both classical repertoire and contemporary pieces.</p>
-        </div>
-    </div>
-
-    <!-- Mentors Section -->
-    <div class="teaching-item">
-        <div class="teaching-image">
-            <img src="src/Teachers.jpg" alt="Musical mentors">
-        </div>
-        <div class="teaching-text">
-            <h3>My Mentors</h3>
-            <p>Thank you to my teachers for the past 13 years : <a href="https://sfcm.edu/study/faculty/alla-gladysheva" target="_blank" >Alla Gladysheva</a> (center), <a href="https://lylesheffler.com/" target="_blank" >Lyle Sheffler</a> (left), <a href="https://www.nathanpejzalink.com/" target="_blank" >Nathan Link</a> (right)
+            <p>
+              My students learn proper technique and musical expression,
+              developing skills for both classical repertoire and contemporary
+              pieces.
             </p>
+          </div>
         </div>
-    </div>
-</div>
+
+        <!-- Mentors Section -->
+        <div class="teaching-item">
+          <div class="teaching-image">
+            <img src="src/Teachers.jpg" alt="Musical mentors" />
+          </div>
+          <div class="teaching-text">
+            <h3>My Mentors</h3>
+            <p>
+              Thank you to my teachers for the past 13 years :
+              <a
+                href="https://sfcm.edu/study/faculty/alla-gladysheva"
+                target="_blank"
+                >Alla Gladysheva</a
+              >
+              (center),
+              <a href="https://lylesheffler.com/" target="_blank"
+                >Lyle Sheffler</a
+              >
+              (left),
+              <a href="https://www.nathanpejzalink.com/" target="_blank"
+                >Nathan Link</a
+              >
+              (right)
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="contact-section">
@@ -406,8 +443,12 @@
         <div class="footer-section">
           <h4>Follow Me</h4>
           <div class="social-icons">
-            <a href="https://www.instagram.com/tristanriehl/" target="_blank" ><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@TristanRiehl" target="_blank" ><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/tristanriehl/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/@TristanRiehl" target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
             <a href="#"><i class="fab fa-spotify"></i></a>
             <a href="#"><i class="fab fa-facebook"></i></a>
           </div>
@@ -478,6 +519,31 @@
         .forEach((el) => {
           observer.observe(el);
         });
+    </script>
+
+    <!-- Add this at the end of your body -->
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <script>
+      // Add this to your existing script
+      const scrollButton = document.querySelector(".scroll-top");
+
+      // Show/hide button on scroll
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          scrollButton.classList.add("visible");
+        } else {
+          scrollButton.classList.remove("visible");
+        }
+      });
+
+      // Scroll to top functionality
+      scrollButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
     </script>
   </body>
 </html>
